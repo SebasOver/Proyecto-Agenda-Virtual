@@ -20,5 +20,6 @@ from agenda import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.helloWorld)
+    path('',views.helloWorld),
+    path('signup/',views.helloWorld)
 ]
