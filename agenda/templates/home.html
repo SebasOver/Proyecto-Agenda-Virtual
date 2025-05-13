@@ -1,1 +1,22 @@
-<h1>Home</h1>
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main class="container py-5">
+    <section class = "card card-body">
+        <h1 class="display-1 text-center">Inicio</h1>
+        <p>Aquí puedes crear tus eventos, editarlos si cambian los planes, eliminarlos si ya no van, o marcarlos como completados cuando todo salga genial.
+            La idea es que tengas todo en un solo lugar y no se te pase nada importante.
+            Empieza cuando quieras</p>
+        <div class="text-center">
+            <a class="btn btn-secondary" href="/signin">
+                Ingresar
+            </a>
+            <a class="btn btn-dark" href="/signup">
+                Registrarse
+            </a>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
